@@ -549,15 +549,15 @@ border-bottom: 1px solid #ececec;
   margin-right: -30px;
 }
 
-.studio-image:not(:last-child) {
+.services__image:not(:last-child) {
   margin-right: 30px;
 }
 
-.studio-image {
+.services__image {
   position: relative;
 }
 
-.studio-image-description {
+.services__description {
   position: absolute;
   display: flex;
   align-items: center;
@@ -569,7 +569,7 @@ border-bottom: 1px solid #ececec;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.studio-image-name {
+.services__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
