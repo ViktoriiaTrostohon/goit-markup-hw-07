@@ -274,7 +274,7 @@ body {
 
 /* Header: logo */
 .logo {
-    font-family: Raleway, sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -293,7 +293,7 @@ body {
   color: var(--title-text-color);
 }
 
-/* Header: navigation */
+/* Header geometry */
 
 .header {
 border-bottom: 1px solid #ececec;
@@ -309,7 +309,7 @@ border-bottom: 1px solid #ececec;
   width: 1200px;
 }
 
-
+/* Header navigation */
 
 .nav {
   display: flex;
@@ -319,11 +319,11 @@ border-bottom: 1px solid #ececec;
   align-items: center;
 }
 
-.nav-point:not(:last-child) {
+.nav-list__point:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-item {
+.nav-list__item {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -333,18 +333,18 @@ border-bottom: 1px solid #ececec;
   color: var(--title-text-color);
 }
 
-.nav-item:hover,
-.nav-item:focus {
+.nav-list__item:hover,
+.nav-list__item:focus {
   color: var(--accent-color);
   transition: color var(--duration) var(--speed);
 }
 
-.nav-item.current {
+.nav-list__item-current {
   position: relative;
   color: var(--accent-color);
 }
 
-.nav-item.current::after {
+.nav-list__item-current::after {
   content: "";
   display: block;
   position: absolute;
@@ -359,19 +359,23 @@ border-bottom: 1px solid #ececec;
 /* Header: contacts */
 .contacts {
   display: flex;
+  
+}
+
+.nav-contacts {
   margin-left: auto;
 }
 
-.contacts-point {
+.contacts__point {
   display: flex;
   align-items: center;
 }
 
-.contacts-point:not(:last-child) {
+.contacts__point:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts-item {
+.contacts__item {
   display: flex;
   align-items: center;
   color: var(--main-text-color);
@@ -381,15 +385,15 @@ border-bottom: 1px solid #ececec;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts__item:hover,
+.contacts__item:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
   transition: color var(--duration) var(--speed),
     fill var(--duration) var(--speed);
 }
 
-.contacts-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
   transition: fill var(--duration) var(--speed);
