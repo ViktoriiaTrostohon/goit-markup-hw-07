@@ -274,33 +274,42 @@ body {
 
 /* Header: logo */
 .logo {
-  margin-right: 93px;
-  padding-left: 0;
-  font-family: Raleway, sans-serif;
+    font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
 }
-.logo-name-one {
+
+.logo-geometry {
+  margin-right: 93px;
+  padding-left: 0;
+}
+
+.logo__name-one {
   color: var(--accent-color);
 }
-.logo-name-two {
-  color: #000000;
+.logo__name-two {
+  color: var(--title-text-color);
 }
 
 /* Header: navigation */
 
-.container.header {
-  display: flex;
-  width: 1200px;
+.header {
+border-bottom: 1px solid #ececec;
 }
 
 .header-section {
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #ececec;
+  }
+
+.header-container {
+  display: flex;
+  width: 1200px;
 }
+
+
 
 .nav {
   display: flex;
@@ -650,7 +659,7 @@ body {
   background-color: var(--footer-color);
 }
 
-.footer .logo-name-two {
+.logo__name-two-white {
   color: var(--primary-white-color);
 }
 .container.contact-us {
