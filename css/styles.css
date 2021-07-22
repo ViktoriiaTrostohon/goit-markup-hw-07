@@ -426,8 +426,6 @@ border-bottom: 1px solid #ececec;
 .hero {
   max-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -437,6 +435,11 @@ border-bottom: 1px solid #ececec;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+.hero-geometry {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -465,15 +468,15 @@ border-bottom: 1px solid #ececec;
   transition: color var(--duration) var(--speed),
     background-color var(--duration) var(--speed);
 }
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
 }
 
 /* HIDE THIS THROUGH IS-HIDDEN */
-.portfolio-hero-heading,
-.heading-studio-hide {
+.portfolio-hero-heading
+ {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -489,16 +492,19 @@ border-bottom: 1px solid #ececec;
 
 /* Why us */
 
-.pros.section {
-  padding-bottom: 94px;
+.advantages-geometry {
+ padding-bottom: 94px;
 }
 
-.advantages {
+.pros {
   display: flex;
+}
+
+.pros-geometry {
   margin-right: -30px;
 }
 
-.pros-pic {
+.pros__pic {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -508,19 +514,15 @@ border-bottom: 1px solid #ececec;
   background-color: #f5f4fa;
 }
 
-.heading-studio-list-item {
+.pros__list-item {
   width: 270px;
 }
 
-.heading-studio-list-item:not(:last-child) {
+.pros__list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-
-
-
-
-.heading-studio-list-item-name {
+.pros__name {
   padding-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -528,19 +530,22 @@ border-bottom: 1px solid #ececec;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.heading-studio-list-item-content {
+.pros__content {
   font-size: 14px;
   line-height: 1.71;
 }
 
 /* What we do */
-.works.section {
+.works-geometry {
   padding-top: 0px;
 }
 
 .services {
   display: flex;
   flex-wrap: wrap;
+}
+
+.services-geometry {
   margin-right: -30px;
 }
 
