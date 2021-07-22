@@ -474,21 +474,6 @@ border-bottom: 1px solid #ececec;
   background-color: var(--primary-white-color);
 }
 
-/* HIDE THIS THROUGH IS-HIDDEN */
-.portfolio-hero-heading
- {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-/* HIDE THIS THROUGH IS-HIDDEN */
 
 /* Why us */
 
@@ -856,15 +841,24 @@ border-bottom: 1px solid #ececec;
   margin-left: 10px;
 }
 
+/* PORTFOLIO */
+
 /* Examples of our works:buttons */
-.list.buttons {
+.buttons {
   display: flex;
   justify-content: center;
+}
+
+.buttons-geometry {
   margin-bottom: 50px;
   padding-right: -8px;
 }
 
-.portfolio-button {
+.buttons__content:not(:last-child):not(:last-child) {
+  padding-right: 8px;
+}
+
+.buttons__portfolio-button {
   padding: 6px 22px;
   border-radius: 4px;
   border: 1px solid transparent;
@@ -877,12 +871,9 @@ border-bottom: 1px solid #ececec;
   cursor: pointer;
 }
 
-.button-content:not(:last-child):not(:last-child) {
-  padding-right: 8px;
-}
 
-.portfolio-button:hover,
-.portfolio-button:focus {
+.buttons__portfolio-button:hover,
+.buttons__portfolio-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -891,7 +882,7 @@ border-bottom: 1px solid #ececec;
     background-color var(--duration) var(--speed),
     box-shadow var(--duration) var(--speed);
 }
-.portfolio-button.current {
+.buttons__portfolio-button--current {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
