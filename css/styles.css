@@ -659,59 +659,75 @@ border-bottom: 1px solid #ececec;
 
 /* Footer */
 
+/* Footer parameters */
+
 .footer {
   background-color: var(--footer-color);
 }
 
-.logo__name-two-white {
-  color: var(--primary-white-color);
-}
-.container.contact-us {
+.footer-contacts {
   display: flex;
 }
+
+/* Footer address geometry*/
 
 .logo-contacts {
   display: flex;
   flex-direction: column;
+  
+}
+
+.contacts-geometry {
   margin-right: 70px;
   padding: 60px 0px;
 }
 
-.logo.page-bottom {
+/* Footer logo */
+
+.logo-footer {
   margin-right: 0px;
   margin-bottom: 20px;
   padding-left: 0;
 }
 
-.google-maps-address:hover,
-.google-maps-address:focus,
-.virtual-address-link:hover,
-.virtual-address-link:focus {
+.logo__name-two-white {
+  color: var(--primary-white-color);
+}
+
+
+/* Footer address, mail, phone */
+
+.address__google-maps:hover,
+.address__google-maps:focus,
+.address__virtual-link:hover,
+.address__virtual-link:focus {
   color: var(--accent-color);
   transition: color var(--duration) var(--speed);
 }
-.google-maps-address {
+.address__google-maps {
   color: var(--primary-white-color);
 }
-.virtual-address-link {
+.address__virtual-link {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address.map {
+.address__map {
   margin-bottom: 9px;
 }
 
-.address.email {
+.address__email {
   margin-bottom: 9px;
 }
 
-.google-maps-address,
-.virtual-address-link {
+.address__google-maps,
+.address__virtual-link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
 }
+
+/* Footer social networks */
 
 .join-us {
   display: block;
