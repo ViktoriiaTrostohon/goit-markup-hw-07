@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,AAAA,KAAK,AAAC,CACJ,iBAAiB,CAAA,QAAC,CAClB,kBAAkB,CAAA,QAAC,CACnB,qBAAqB,CAAA,QAAC,CACtB,cAAc,CAAA,QAAC,CACf,iBAAiB,CAAA,QAAC,CAClB,oBAAoB,CAAA,QAAC,CACrB,cAAc,CAAA,QAAC,CACf,UAAU,CAAA,MAAC,CACX,OAAO,CAAA,6BAAC,CACT",
     "sources": [
-        "../sass/main.scss"
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss"
     ],
     "names": [],
     "file": "main.min.css"

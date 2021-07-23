@@ -1,46 +1,4 @@
-:root {
-  --main-text-color: #757575;
-  --title-text-color: #212121;
-  --primary-white-color: #ffffff;
-  --accent-color: #2196f3;
-  --main-icon-color: #afb1b8;
-  --modal-button-hover: #188ce8;
-  --footer-color: #2f303a;
-  --duration: 250ms;
-  --speed: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* Global resets and classes */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-img {
-  display: block;
-}
-
-body {
-  color: var(--main-text-color);
-  font-family: Roboto, Open Sans, Cabin, sans-serif;
-  letter-spacing: 0.03em;
-}
-.list {
-  list-style-type: none;
-}
 
 .container {
   width: 1200px;
@@ -75,7 +33,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 .backdrop {
   position: fixed;
@@ -319,13 +276,13 @@ body {
 /* Header geometry */
 
 .header {
-border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-section {
   padding-top: 24px;
   padding-bottom: 24px;
-  }
+}
 
 .header-container {
   display: flex;
@@ -382,7 +339,6 @@ border-bottom: 1px solid #ececec;
 /* Header: contacts */
 .contacts {
   display: flex;
-  
 }
 
 .nav-contacts {
@@ -474,11 +430,10 @@ border-bottom: 1px solid #ececec;
   background-color: var(--primary-white-color);
 }
 
-
 /* Why us */
 
 .advantages-geometry {
- padding-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .pros {
@@ -681,7 +636,6 @@ border-bottom: 1px solid #ececec;
 .logo-contacts {
   display: flex;
   flex-direction: column;
-  
 }
 
 .contacts-geometry {
@@ -700,7 +654,6 @@ border-bottom: 1px solid #ececec;
 .logo__name-two--white {
   color: var(--primary-white-color);
 }
-
 
 /* Footer address, mail, phone */
 
@@ -739,7 +692,6 @@ border-bottom: 1px solid #ececec;
 .join-us {
   display: block;
   height: 80px;
-  
 }
 
 .footer-networks {
@@ -772,7 +724,7 @@ border-bottom: 1px solid #ececec;
 
 .footer-form-geometry {
   padding-top: 72px;
-   padding-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .contact-form__feedback {
@@ -789,7 +741,6 @@ border-bottom: 1px solid #ececec;
   align-items: center;
   justify-content: center;
 }
-
 
 .form-field__label {
   display: inline-block;
@@ -871,7 +822,6 @@ border-bottom: 1px solid #ececec;
   cursor: pointer;
 }
 
-
 .buttons__portfolio-button:hover,
 .buttons__portfolio-button:focus {
   color: var(--primary-white-color);
@@ -886,8 +836,6 @@ border-bottom: 1px solid #ececec;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-
-
 
 /* part with pics */
 .products {
@@ -948,7 +896,6 @@ border-bottom: 1px solid #ececec;
   text-decoration: none;
   color: inherit;
 }
-
 
 /* Examples of our works: content blocks */
 
