@@ -1,0 +1,40 @@
+.contacts {
+  display: flex;
+}
+
+.nav-contacts {
+  margin-left: auto;
+}
+
+.contacts__point {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__point:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.contacts__item:hover,
+.contacts__item:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+  transition: color var(--duration) var(--speed),
+    fill var(--duration) var(--speed);
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill var(--duration) var(--speed);
+}
