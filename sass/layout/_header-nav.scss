@@ -15,28 +15,28 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--title-text-color);
-  }
 
-  &__item:hover,
-  &__item:focus {
-    color: var(--accent-color);
-    transition: color var(--duration) var(--speed);
-  }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      transition: color var(--duration) var(--speed);
+    }
 
-  &__item--current {
-    position: relative;
-    color: var(--accent-color);
-  }
+    &--current {
+      position: relative;
+      color: var(--accent-color);
+    }
 
-  &__item--current::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 45px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-    cursor: pointer;
+    &--current::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 45px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+      cursor: pointer;
+    }
   }
 }

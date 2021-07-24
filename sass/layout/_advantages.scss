@@ -4,39 +4,36 @@
 
 .pros {
   display: flex;
+
+  &__pic {
+    @include centered-flex(flex, center, center);
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+  }
+
+  &__list-item {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__name {
+    padding-bottom: 10px;
+    color: var(--title-text-color);
+    @include font(14px, 700);
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  &__content {
+    @include font(14px, 400);
+    line-height: 1.71;
+  }
 }
 
 .pros-geometry {
   margin-right: -30px;
-}
-
-.pros__pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-}
-
-.pros__list-item {
-  width: 270px;
-}
-
-.pros__list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.pros__name {
-  padding-bottom: 10px;
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-.pros__content {
-  font-size: 14px;
-  line-height: 1.71;
 }

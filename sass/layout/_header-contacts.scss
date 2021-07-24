@@ -3,10 +3,10 @@
 
   &__point {
     @include centered-flex(flex, center, flex-start);
-  }
 
-  &__point:not(:last-child) {
-    margin-right: 50px;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 
   &__item {
@@ -16,13 +16,14 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-  }
-  &__item:hover,
-  &__item:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-    transition: color var(--duration) var(--speed),
-      fill var(--duration) var(--speed);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      fill: var(--accent-color);
+      transition: color var(--duration) var(--speed),
+        fill var(--duration) var(--speed);
+    }
   }
 
   &__icon {

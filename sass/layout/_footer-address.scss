@@ -1,15 +1,28 @@
-.address__google-maps:hover,
-.address__google-maps:focus,
-.address__virtual-link:hover,
-.address__virtual-link:focus {
-  color: var(--accent-color);
-  transition: color var(--duration) var(--speed);
-}
 .address__google-maps {
+  font-style: normal;
+  @include font(14px, 400);
+  line-height: 1.71;
+  text-decoration: none;
   color: var(--primary-white-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color var(--duration) var(--speed);
+  }
 }
 .address__virtual-link {
+  font-style: normal;
+  @include font(14px, 400);
+  line-height: 1.71;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color var(--duration) var(--speed);
+  }
 }
 
 .address__map {
@@ -18,12 +31,4 @@
 
 .address__email {
   margin-bottom: 9px;
-}
-
-.address__google-maps,
-.address__virtual-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  text-decoration: none;
 }

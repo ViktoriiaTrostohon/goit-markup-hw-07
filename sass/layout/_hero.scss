@@ -1,7 +1,6 @@
 .hero {
   max-width: 1600px;
   height: 600px;
-  background-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -10,14 +9,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  background-color: #c4c4c4;
 
   &__title {
     margin-bottom: 30px;
-    color: var(--primary-white-color);
     @include font(44px, 900);
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--primary-white-color);
   }
 
   &__button {
@@ -32,11 +32,12 @@
     cursor: pointer;
     transition: color var(--duration) var(--speed),
       background-color var(--duration) var(--speed);
-  }
-  &__button:hover,
-  &__button:focus {
-    color: var(--accent-color);
-    background-color: var(--primary-white-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      background-color: var(--primary-white-color);
+    }
   }
 }
 
