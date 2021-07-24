@@ -1,0 +1,26 @@
+.clients {
+  display: flex;
+  align-items: center;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border: 1px solid var(--main-icon-color);
+  border-radius: 4px;
+  fill: var(--main-icon-color);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  transition: fill var(--duration) var(--speed),
+    border var(--duration) var(--speed);
+}

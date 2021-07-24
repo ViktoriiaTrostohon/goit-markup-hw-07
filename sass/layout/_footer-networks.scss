@@ -1,0 +1,30 @@
+.join-us {
+  display: block;
+  height: 80px;
+}
+
+.footer-networks {
+  margin-right: 93px;
+  padding-top: 75px;
+  padding-bottom: 97px;
+}
+
+.join-us__footer-heading {
+  margin-bottom: 20px;
+  align-items: baseline;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.networks__link-grey {
+  fill: var(--primary-white-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.networks__link-grey:hover,
+.networks__link-grey:focus {
+  background-color: var(--accent-color);
+}
