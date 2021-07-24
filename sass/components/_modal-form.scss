@@ -5,8 +5,7 @@
 
 .modal-form-feedback {
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
+  @include font(20px, 700);
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
@@ -14,7 +13,7 @@
 
 .modal-form-label {
   position: relative;
-  font-size: 12px;
+  @include font(12px, 400);
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
@@ -63,7 +62,7 @@
 }
 
 .modal-form-comment::placeholder {
-  font-size: 14px;
+  @include font(14px, 400);
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
